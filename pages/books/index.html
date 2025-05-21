@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiferReview</title>
+    <link rel="stylesheet" href="../../styles/global/index.css" />
+    <link rel="stylesheet" href="../../styles/global/navBar.css" />
+    <link rel="stylesheet" href="../../styles/global/cardsReviews.css" />
+    <link rel="stylesheet" href="../../styles/global/form.css" />
+</head>
+
+<body>
+    <div class="layout">
+        <header>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <div class="container-title">
+                <a href="../home/index.html" class="site-name">DiferReview</a>
+                <div class="menu-icons">
+                    <label for="menu-toggle" class="hamburger open">&#9776;</label>
+                    <label for="menu-toggle" class="hamburger close">✖</label>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../books/index.html">Reseñas de Libros</a></li>
+                    <li><a href="../movies/index.html">Reseñas de Películas</a></li>
+                    <li><a href="../videoGames/index.html">Reseñas de Videojuegos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Reseñas de libros</h1>
+            <div class="containerImage">
+                <img src="../../assets/book.jpg" alt="Pagina de reseñas">
+            </div>
+            <div class="reviews-grid">
+                <div class="reviews-grid">
+                    <section class="review">
+                        <a href="https://moodle2.units.it/pluginfile.php/729086/mod_resource/content/1/Ruiz-Zafon-Carlos-La-Sombra-Del-Viento_54Y.pdf"
+                            class="card-link" target="_blank" rel="noopener noreferrer">
+                            <h2>"Entre Sombras y Silencio"</h2>
+                            <img src="../../assets/sombraBook.webp" alt="*La Sombra del Viento* de Carlos Ruiz Zafón">
+                            <p><strong>Libro:</strong> *La Sombra del Viento* de Carlos Ruiz Zafón</p>
+                            <p>
+                                Una historia atrapante ambientada en la Barcelona de la posguerra, donde el joven Daniel
+                                descubre un libro que cambiará su vida. Una mezcla perfecta de intriga, pasión por los
+                                libros y secretos familiares. Zafón construye una atmósfera única que te atrapa desde la
+                                primera página.
+                            </p>
+                            <div class="stars" data-rating="4"></div>
+                        </a>
+                    </section>
+
+                    <section class="review">
+                        <a href="https://educacion.seducoahuila.gob.mx/wp-content/uploads/2023/10/16.-Los-Miserables-Victor-Hugo.pdf"
+                            class="card-link" target="_blank" rel="noopener noreferrer">
+                            <h2>"Realismo Brutal y Esperanza"</h2>
+                            <img src="../../assets/miseraBook.webp" alt="*La Sombra del Viento* de Carlos Ruiz Zafón">
+                            <p><strong>Libro:</strong> *Los Miserables* de Victor Hugo</p>
+                            <p>
+                                Más que una novela, una obra monumental sobre la redención humana. Hugo retrata con
+                                crudeza la injusticia social y al mismo tiempo llena la historia de compasión. Jean
+                                Valjean es un personaje inolvidable que te confronta con tus propios valores y
+                                prejuicios.
+                            </p>
+                            <div class="stars" data-rating="3"></div>
+                        </a>
+                    </section>
+
+                    <section class="review">
+                        <a href="https://filosevilla2012.wordpress.com/wp-content/uploads/2013/02/lem-stanislaw-solaris.pdf"
+                            class="card-link" target="_blank" rel="noopener noreferrer">
+                            <h2>"Filosofía Existencial Hecha Ciencia Ficción"</h2>
+                            <img src="../../assets/solaris.webp" alt="*La Sombra del Viento* de Carlos Ruiz Zafón">
+                            <p><strong>Libro:</strong> *Solaris* de Stanisław Lem</p>
+                            <p>
+                                Esta obra desafía la percepción de la inteligencia humana y alienígena, explorando los
+                                límites del conocimiento y la culpa. No es una novela espacial típica, sino una
+                                introspección psicológica y filosófica disfrazada de ciencia ficción. Ideal para
+                                lectores que buscan profundidad.
+                            </p>
+                            <div class="stars" data-rating="2"></div>
+                        </a>
+                    </section>
+
+                    <section class="review">
+                        <a href="https://docs.google.com/file/d/0B8cnhoQ2cTXIbGgxUXVaRDN4NmM/edit?resourcekey=0-NHcwI5HW-IXwNiX8nORcnQ"
+                            class="card-link" target="_blank" rel="noopener noreferrer">
+                            <h2>"Una Promesa No Cumplida"</h2>
+                            <img src="../../assets/novenaBook.webp" alt="*La Sombra del Viento* de Carlos Ruiz Zafón">
+                            <p><strong>Libro:</strong> *La novena revelación* de James Redfield</p>
+                            <p>
+                                Aunque prometía una experiencia transformadora con tintes espirituales y filosóficos,
+                                esta obra resulta superficial y repetitiva. Su narrativa cae en clichés y deja muchos
+                                conceptos sin desarrollar. Ideal quizás para quienes recién se acercan al tema, pero
+                                insatisfactoria para lectores más exigentes.
+                            </p>
+                            <div class="stars" data-rating="1"></div>
+                        </a>
+                    </section>
+
+                    <section aria-labelledby="form-title">
+                        <h3 id="form-title">Deja tu reseña sobre un libro</h3>
+
+                        <form action="../thanksSendForm/index.html" method="get">
+                            <fieldset>
+                                <legend>Datos personales</legend>
+                                <label for="email">Correo electrónico:</label><br />
+                                <input type="email" id="email" name="email" required /><br /><br />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Reseña</legend>
+                                <label for="name">Nombre del libro:</label><br />
+                                <input type="text" id="name" name="name" required /><br /><br />
+                                <label for="message">Escribe tu reseña:</label><br />
+                                <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+                            </fieldset>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Mi Sitio de Reseñas</p>
+        </footer>
+    </div>
+</body>
+
+</html>

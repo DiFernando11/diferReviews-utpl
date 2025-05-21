@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiferReview</title>
+    <link rel="stylesheet" href="../../styles/global/index.css" />
+    <link rel="stylesheet" href="../../styles/global/navBar.css" />
+    <link rel="stylesheet" href="../../styles/global/cardsReviews.css" />
+    <link rel="stylesheet" href="../../styles/global/form.css" />
+</head>
+
+<body>
+    <div class="layout">
+        <header>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <div class="container-title">
+                <a href="../home/index.html" class="site-name">DiferReview</a>
+                <div class="menu-icons">
+                    <label for="menu-toggle" class="hamburger open">&#9776;</label>
+                    <label for="menu-toggle" class="hamburger close">✖</label>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../books/index.html">Reseñas de Libros</a></li>
+                    <li><a href="../movies/index.html">Reseñas de Películas</a></li>
+                    <li><a href="../videoGames/index.html">Reseñas de Videojuegos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Reseñas de peliculas</h1>
+            <div class="containerImage">
+                <img src="../../assets/resenasMov.png" alt="Pagina de reseñas">
+            </div>
+            <div class="reviews-grid">
+                <div class="reviews-grid">
+                    <section class="review">
+                        <a href="https://www.antena3.com/series/suenos-de-libertad/" class="card-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <h2>"Redención y Esperanza Inquebrantable"</h2>
+                            <img src="../../assets/suenosMov.jpeg" alt="Sueños de libertad (The Shawshank Redemption)">
+                            <p><strong>Película:</strong> *Sueños de libertad* (The Shawshank Redemption) de Frank
+                                Darabont</p>
+                            <p>
+                                Una poderosa historia sobre la resiliencia del espíritu humano. Ambientada en una
+                                prisión, sigue la vida de Andy Dufresne, un hombre condenado injustamente que, a través
+                                de la esperanza y la amistad, encuentra su redención. Un clásico del cine que deja
+                                huella.
+                            </p>
+                            <div class="stars" data-rating="5"></div>
+                        </a>
+                    </section>
+
+                    <section class="review">
+                        <a href="https://www.imdb.com/title/tt0109830/" class="card-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <h2>"Coraje Inocente"</h2>
+                            <img src="../../assets/forestMov.jpg" alt="Forrest Gump">
+                            <p><strong>Película:</strong> *Forrest Gump* de Robert Zemeckis</p>
+                            <p>
+                                A través de los ojos de Forrest, un hombre con un corazón puro, somos testigos de
+                                algunos de los eventos más icónicos del siglo XX. Una mezcla perfecta de humor, drama e
+                                historia, con un mensaje claro: todos podemos dejar huella, incluso sin darnos cuenta.
+                            </p>
+                            <div class="stars" data-rating="4"></div>
+                        </a>
+                    </section>
+
+                    <section class="review">
+                        <a href="https://www.imdb.com/title/tt0133093/" class="card-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <h2>"La Realidad Cuestionada"</h2>
+                            <img src="../../assets/matrixMov.jpeg" alt="The Matrix">
+                            <p><strong>Película:</strong> *The Matrix* de las Hermanas Wachowski</p>
+                            <p>
+                                ¿Y si todo lo que conoces fuera una ilusión? The Matrix rompió moldes con su mezcla de
+                                acción, filosofía y tecnología. Un thriller de ciencia ficción que cambió el cine
+                                moderno y nos hizo dudar de nuestra realidad cotidiana.
+                            </p>
+                            <div class="stars" data-rating="5"></div>
+                        </a>
+                    </section>
+
+                    <section class="review">
+                        <a href="https://www.imdb.com/title/tt4154796/" class="card-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <h2>"El Fin de una Era"</h2>
+                            <img src="../../assets/avengersMov.webp" alt="Avengers: Endgame">
+                            <p><strong>Película:</strong> *Avengers: Endgame* de Anthony y Joe Russo</p>
+                            <p>
+                                El épico cierre de una saga que marcó una generación. Avengers: Endgame reúne a los
+                                héroes más poderosos de la Tierra en una batalla emocional y espectacular contra Thanos.
+                                Una montaña rusa de nostalgia, sacrificio y acción que da fin a más de una década de
+                                historias conectadas.
+                            </p>
+                            <div class="stars" data-rating="4"></div>
+                        </a>
+                    </section>
+
+                    <section aria-labelledby="form-title">
+                        <h3 id="form-title">Deja tu reseña sobre una pelicula</h3>
+
+                        <form action="../thanksSendForm/index.html" method="get">
+                            <fieldset>
+                                <legend>Datos personales</legend>
+                                <label for="email">Correo electrónico:</label><br />
+                                <input type="email" id="email" name="email" required /><br /><br />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Reseña</legend>
+                                <label for="name">Nombre de la pelicula:</label><br />
+                                <input type="text" id="name" name="name" required /><br /><br />
+                                <label for="message">Escribe tu reseña:</label><br />
+                                <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+                            </fieldset>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Mi Sitio de Reseñas</p>
+        </footer>
+    </div>
+</body>
+
+</html>

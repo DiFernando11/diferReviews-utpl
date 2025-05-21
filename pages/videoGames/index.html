@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiferReview</title>
+    <link rel="stylesheet" href="../../styles/global/index.css" />
+    <link rel="stylesheet" href="../../styles/global/navBar.css" />
+    <link rel="stylesheet" href="../../styles/global/cardsReviews.css" />
+    <link rel="stylesheet" href="../../styles/global/form.css" />
+</head>
+
+<body>
+    <div class="layout">
+        <header>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <div class="container-title">
+                <a href="../home/index.html" class="site-name">DiferReview</a>
+                <div class="menu-icons">
+                    <label for="menu-toggle" class="hamburger open">&#9776;</label>
+                    <label for="menu-toggle" class="hamburger close">✖</label>
+                </div>
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../books/index.html">Reseñas de Libros</a></li>
+                    <li><a href="../movies/index.html">Reseñas de Películas</a></li>
+                    <li><a href="../videoGames/index.html">Reseñas de Videojuegos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Reseñas de video juegos</h1>
+            <div class="containerImage">
+                <img src="../../assets/videogames.avif" alt="Pagina de reseñas">
+            </div>
+            <div class="reviews-grid">
+                <div class="reviews-grid">
+                    <section class="review">
+                        <a href="https://www.nintendo.com/es-ar/store/games/zelda-games/?srsltid=AfmBOooKOYdVYYAG8Xgc8x2bEMNs9IyeUm7rOvzhEliM6AQBjWUX8gYt#sort=df&p=0"
+                            class="card-link" target="_blank" rel="noopener noreferrer">
+                            <h2>"Exploración sin Límites"</h2>
+                            <img src="../../assets/zeldaGame.webp" alt="The Legend of Zelda: Breath of the Wild">
+                            <p><strong>Videojuego:</strong> *The Legend of Zelda: Breath of the Wild* – Nintendo</p>
+                            <p>
+                                Una obra maestra del mundo abierto que redefine la libertad del jugador. Con un mundo
+                                vasto, dinámico y lleno de secretos, este Zelda invita a perderse en una aventura donde
+                                cada descubrimiento se siente personal. Imprescindible para todo amante de los
+                                videojuegos.
+                            </p>
+                            <div class="stars" data-rating="5"></div>
+                        </a>
+                    </section>
+
+                    <section class="review">
+                        <a href="https://www.counter-strike.net/cs2?l=spanish" class="card-link"
+                            target="_blank" rel="noopener noreferrer">
+                            <h2>"Tensión y Precisión en Cada Ronda"</h2>
+                            <img src="../../assets/counterGame.jpeg" alt="Counter-Strike 2">
+                            <p><strong>Videojuego:</strong> *Counter-Strike 2* – Valve</p>
+                            <p>
+                                La evolución de un clásico. CS2 mantiene la esencia competitiva que lo hizo leyenda,
+                                ahora con mejoras gráficas y físicas modernas. Cada partida es un enfrentamiento de
+                                reflejos, estrategia y nervios de acero. Perfecto para fanáticos del shooter táctico.
+                            </p>
+                            <div class="stars" data-rating="4"></div>
+                        </a>
+                    </section>
+
+                    <section class="review">
+                        <a href="https://www.rockstargames.com/es/gta-v" class="card-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <h2>"Crimen, Caos y Libertad"</h2>
+                            <img src="../../assets/gtavGame.jpg" alt="GTA V">
+                            <p><strong>Videojuego:</strong> *Grand Theft Auto V* – Rockstar Games</p>
+                            <p>
+                                Una experiencia inmersiva que combina narrativa cinematográfica con un sandbox lleno de
+                                posibilidades. GTA V te lanza al corazón de Los Santos para vivir como criminal,
+                                empresario o simplemente causar caos. Sigue siendo uno de los juegos más completos y
+                                populares.
+                            </p>
+                            <div class="stars" data-rating="5"></div>
+                        </a>
+                    </section>
+
+                    <section class="review">
+                        <a href="https://www.minecraft.net/es-es" class="card-link" target="_blank"
+                            rel="noopener noreferrer">
+                            <h2>"Creatividad Pixelada"</h2>
+                            <img src="../../assets/mineCraftGame.avif" alt="Minecraft">
+                            <p><strong>Videojuego:</strong> *Minecraft* – Mojang</p>
+                            <p>
+                                Mucho más que bloques. Minecraft es un universo de posibilidades, desde construcción y
+                                exploración hasta supervivencia y educación. Su estilo visual simple oculta una
+                                profundidad infinita que lo convierte en uno de los juegos más influyentes de todos los
+                                tiempos.
+                            </p>
+                            <div class="stars" data-rating="4"></div>
+                        </a>
+                    </section>
+
+                    <section aria-labelledby="form-title">
+                        <h3 id="form-title">Deja tu reseña sobre un video juego</h3>
+
+                        <form action="../thanksSendForm/index.html" method="get">
+                            <fieldset>
+                                <legend>Datos personales</legend>
+                                <label for="email">Correo electrónico:</label><br />
+                                <input type="email" id="email" name="email" required /><br /><br />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Reseña</legend>
+                                <label for="name">Nombre del video juego:</label><br />
+                                <input type="text" id="name" name="name" required /><br /><br />
+                                <label for="message">Escribe tu reseña:</label><br />
+                                <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+                            </fieldset>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Mi Sitio de Reseñas</p>
+        </footer>
+    </div>
+</body>
+
+</html>
